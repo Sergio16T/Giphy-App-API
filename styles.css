@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+    margin: 0;
+}
+body {
+    height: 100%; 
+    background-color: black; 
+}
+img {
+    height: auto; 
+    width: 25vh; 
+}
+input {
+    float: left; 
+    width: 80%; 
+    height: 8vh; 
+    margin-left: 10%; 
+    font-size: 2em; 
+
+}
+button {
+    cursor: pointer; 
+    float: right; 
+    width: auto; 
+    padding: 12px;
+    margin-top: 15px; 
+
+
+}
+.search-bar{
+    margin-top: 5vh; 
+    position: relative; 
+    display: inline-block; 
+    width:100%; 
+    height:10vh; 
+}
