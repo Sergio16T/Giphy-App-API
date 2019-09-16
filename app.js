@@ -5,6 +5,11 @@ const results = document.getElementById('results');
 let imgContainer = document.querySelector('.img-container'); 
 let searchArray = []; 
 button.addEventListener('click', createURL);
+inputSearch.addEventListener('keypress', function(event){
+    if (event.keyCode == 13){
+        button.click();  
+    }
+})
 
 function createURL(input){
     input = inputSearch.value
@@ -15,21 +20,6 @@ function createURL(input){
         .then(check); 
 }
 
- 
-/*
-inputSearch.addEventListener('change', displayChange);
-inputSearch.addEventListener('keyup', displayChange); 
-*/ 
-/*
-const promise =fetch(url, {mode: 'cors'})
-    .then(response => response.json())
-    .then(object => searchArray.push(...object.data));
-    .then(renderImages);
-*/ 
-function displayChange(e) {
-    console.log(e); 
-} 
-
 function renderImages(){
         for(let i =0; i<searchArray.length; i++) {
             let imageTag = document.createElement('img'); 
@@ -37,7 +27,7 @@ function renderImages(){
             imgContainer.appendChild(imageTag); 
         }   
 }   
-let images = document.querySelectorAll('img'); 
+
 
 function check() {
     while (searchArray.length > 30) {
@@ -62,3 +52,18 @@ fetch('https://api.giphy.com/v1/gifs/translate?api_key=XNTqITqRxyHlqfmrr0Q02YCVZ
     .then(data => img.src = data.data.images.original.url)
     .catch(e => console.log(e)); 
 } */ 
+
+/*
+inputSearch.addEventListener('change', displayChange);
+inputSearch.addEventListener('keyup', displayChange); 
+*/ 
+/*
+const promise =fetch(url, {mode: 'cors'})
+    .then(response => response.json())
+    .then(object => searchArray.push(...object.data));
+    .then(renderImages);
+ 
+function displayChange(e) {
+    console.log(e); 
+} 
+*/ 
