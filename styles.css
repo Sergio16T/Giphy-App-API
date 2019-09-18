@@ -8,6 +8,10 @@ body {
     height: 100%; 
     background-color: black; 
 }
+.img-container{
+    text-align: center;
+    margin-top:50px; 
+}
 img {
     height: auto; 
     width: 25vh; 
@@ -16,28 +20,27 @@ img {
 input {
     font-family: 'Noto Sans KR', sans-serif; 
     float: left; 
-    width: 80%; 
-    height: 8vh; 
+    width: 100%;  
     margin-left: 5%;  
     font-size: 2em; 
+    border-right:none; 
 
 }
 button {
     font-family: 'Noto Sans KR', sans-serif; 
     cursor: pointer; 
     float: right;  
-    width: 12%; 
-    padding: 1.5em; 
-    margin-right: 1%;
-    margin-top: 1.5em; 
-    font-size: .3em;
+    width: 80px; 
+    font-size: 2em;
+    background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
 
 
 }
 .search-bar{
     margin-top: 5vh; 
     position: relative; 
-    display: inline-block; 
+    /*display: inline-block; */ 
+    display: flex; 
     width:100%; 
-    height:10vh; 
+    height:9vh; 
 }
