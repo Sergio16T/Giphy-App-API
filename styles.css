@@ -22,7 +22,8 @@ input {
     float: left; 
     width: 100%;  
     margin-left: 5%;  
-    font-size: 2em; 
+    font-size: 1.8em;
+    padding:2px;
     border-right:none; 
 
 }
@@ -31,7 +32,7 @@ button {
     cursor: pointer; 
     float: right;  
     width: 80px; 
-    font-size: 2em;
+    font-size: 2rem;
     background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
 
 
@@ -39,8 +40,9 @@ button {
 .search-bar{
     margin-top: 5vh; 
     position: relative; 
-    /*display: inline-block; */ 
     display: flex; 
     width:100%; 
-    height:9vh; 
+    height:9vh;
+    min-height: 50px; 
+
 }
